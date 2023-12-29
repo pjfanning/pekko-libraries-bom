@@ -4,8 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.pjfanning</groupId>
-  <artifactId>pekko1.0-libraries-bom_2.13</artifactId>
+  <name>pekko-libraries-bom</name>
+  <description>Bill of Materials (BOM) for Apache Pekko libs</description>
+  <url>https://github.com/pjfanning/pekko-libraries-bom</url>
   <version>2024.1.1-SNAPSHOT</version>
 
   <licenses>
@@ -16,7 +17,20 @@
     </license>
   </licenses>
 
+  <developers>
+    <developer>
+      <id>pjfanning</id>
+      <name>PJ Fanning</name>
+      <url>https://github.com/pjfanning</url>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/pjfanning/pekko-libraries-bom.git</url>
+  </scm>
+
   <properties>
+    <group.version>1.0</group.version>
     <pekko.version>1.0.2</pekko.version>
     <pekko-http.version>1.0.0</pekko-http.version>
     <pekko-connectors.version>1.0.1</pekko-connectors.version>
@@ -28,6 +42,20 @@
     <scala.binary.version>2.13</scala.binary.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <groupId>com.github.pjfanning</groupId>
+  <artifactId>pekko${group.version}-libraries-bom_${scala.binary.version}</artifactId>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
