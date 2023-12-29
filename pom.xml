@@ -91,6 +91,61 @@
       </dependency>
       <dependency>
         <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-sns_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-solr_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-spring-web_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-sqs_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-sse_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-text_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-udp_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-unix-domain-socket_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-xml_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-grpc-codegen_${scala.binary.version}</artifactId>
+        <version>${pekko-grpc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-grpc-interop-tests_${scala.binary.version}</artifactId>
+        <version>${pekko-grpc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-grpc-runtime_${scala.binary.version}</artifactId>
         <version>${pekko-grpc.version}</version>
       </dependency>
