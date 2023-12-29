@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.pjfanning</groupId>
+  <artifactId>pekko1.0-libraries-bom_2.13</artifactId>
+  <version>2024.1.1-SNAPSHOT</version>
+
+  <licenses>
+    <license>
+      <name>Apache-2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <properties>
+    <pekko.version>1.0.2</pekko.version>
+    <pekko-http.version>1.0.0</pekko-http.version>
+    <pekko-connectors.version>1.0.1</pekko-connectors.version>
+    <pekko-connectors-kafka.version>1.0.0</pekko-connectors-kafka.version>
+    <pekko-grpc.version>1.0.1</pekko-grpc.version>
+    <pekko-management.version>1.0.0</pekko-management.version>
+    <pekko-persistence-jdbc.version>1.0.0</pekko-persistence-jdbc.version>
+    <pekko-projection.version>1.0.0</pekko-projection.version>
+    <scala.binary.version>2.13</scala.binary.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-bom_${scala.binary.version}</artifactId>
+        <version>${pekko.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-http-bom_${scala.binary.version}</artifactId>
+        <version>${pekko-http.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-kafka_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors-kafka.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-kafka-cluster-sharding_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors-kafka.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-kafka-testkit_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors-kafka.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-grpc-runtime_${scala.binary.version}</artifactId>
+        <version>${pekko-grpc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-management-cluster-http_${scala.binary.version}</artifactId>
+        <version>${pekko-management.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-management-cluster-bootstrap_${scala.binary.version}</artifactId>
+        <version>${pekko-management.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-discovery-kubernetes-api_${scala.binary.version}</artifactId>
+        <version>${pekko-management.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>
