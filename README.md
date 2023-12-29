@@ -19,8 +19,8 @@ The `2024.1.1` versioning is based on the year and the month while the `patch pa
 
 The aim is to support all the libs published by Apache Pekko team but so far, the only ones supported are
 * pekko core libs - see pekko-bom ([example](https://repo1.maven.org/maven2/org/apache/pekko/pekko-bom_2.13/1.0.2/pekko-bom_2.13-1.0.2.pom))
-* pekko-http libs - see pekko-http-bom
-* some pekko-managment libs
-* some pekko-grpc libs
-* some pekko-connectors-kafka libs
-
+* pekko-http libs - see pekko-http-bom ([example](https://repo1.maven.org/maven2/org/apache/pekko/pekko-http-bom_2.13/1.0.0/pekko-http-bom_2.13-1.0.0.pom))
+* some pekko-management libs
+* pekko-grpc libs
+* pekko-connectors-kafka libs
+* some pekko-connectors libs
