@@ -38,7 +38,10 @@
     <pekko-connectors-kafka.version>1.0.0</pekko-connectors-kafka.version>
     <pekko-grpc.version>1.0.1</pekko-grpc.version>
     <pekko-management.version>1.0.0</pekko-management.version>
+    <pekko-persistence-cassandra.version>1.0.0</pekko-persistence-cassandra.version>
+    <pekko-persistence-dynamodb.version>1.0.0</pekko-persistence-dynamodb.version>
     <pekko-persistence-jdbc.version>1.0.0</pekko-persistence-jdbc.version>
+    <pekko-persistence-r2dbc.version>1.0.0</pekko-persistence-r2dbc.version>
     <pekko-projection.version>1.0.0</pekko-projection.version>
     <scala.binary.version>2.13</scala.binary.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,6 +77,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <dependency>
         <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-connectors-kafka_${scala.binary.version}</artifactId>
@@ -320,6 +324,7 @@
         <artifactId>pekko-connectors-xml_${scala.binary.version}</artifactId>
         <version>${pekko-connectors.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-grpc-codegen_${scala.binary.version}</artifactId>
@@ -335,6 +340,7 @@
         <artifactId>pekko-grpc-runtime_${scala.binary.version}</artifactId>
         <version>${pekko-grpc.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-management_${scala.binary.version}</artifactId>
@@ -389,6 +395,88 @@
         <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-discovery-marathon-api_${scala.binary.version}</artifactId>
         <version>${pekko-management.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-lease-kubernetes_${scala.binary.version}</artifactId>
+        <version>${pekko-management.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-persistence-cassandra_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-cassandra.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-persistence-cassandra-launcher_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-cassandra.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-persistence-dynamodb_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-dynamodb.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-persistence-jdbc_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-jdbc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-persistence-r2dbc_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-r2dbc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-persistence-r2dbc-migration_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-r2dbc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-r2dbc_${scala.binary.version}</artifactId>
+        <version>${pekko-persistence-r2dbc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-cassandra_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-core_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-durable-state_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-eventsourced_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-jdbc_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-kafka_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-slick_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-testkit_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
