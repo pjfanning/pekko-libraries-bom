@@ -3,6 +3,8 @@
 Bill of Materials (BOMs) for the Apache Pekko libraries.
 
 ```
+<dependencyManagement>
+  <dependencies>
     <dependency>
         <groupId>com.github.pjfanning</groupId>
         <artifactId>pekko1.0-libraries-bom_2.13</artifactId>
@@ -10,6 +12,8 @@ Bill of Materials (BOMs) for the Apache Pekko libraries.
         <type>pom</type>
         <scope>import</scope>
     </dependency>
+  </dependencies>
+</dependencyManagement>
 ```
 
 `pekko1.0-libraries-bom_2.12` and `pekko1.0-libraries-bom_3` are also supported. The suffix is the Scala Binary version.
