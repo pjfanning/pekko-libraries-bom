@@ -36,7 +36,7 @@
     <pekko-http.version>1.0.0</pekko-http.version>
     <pekko-connectors.version>1.0.1</pekko-connectors.version>
     <pekko-connectors-kafka.version>1.0.0</pekko-connectors-kafka.version>
-    <pekko-grpc.version>1.0.1</pekko-grpc.version>
+    <pekko-grpc.version>1.0.2</pekko-grpc.version>
     <pekko-management.version>1.0.0</pekko-management.version>
     <pekko-persistence-cassandra.version>1.0.0</pekko-persistence-cassandra.version>
     <pekko-persistence-dynamodb.version>1.0.0</pekko-persistence-dynamodb.version>
