@@ -8,7 +8,7 @@ Bill of Materials (BOMs) for the Apache Pekko libraries.
     <dependency>
         <groupId>com.github.pjfanning</groupId>
         <artifactId>pekko1.0-libraries-bom_2.13</artifactId>
-        <version>2023.12.0</version>
+        <version>2024.1.0</version>
         <type>pom</type>
         <scope>import</scope>
     </dependency>
