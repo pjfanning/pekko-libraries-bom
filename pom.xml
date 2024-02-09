@@ -33,7 +33,7 @@
   <properties>
     <group.version>1.0</group.version>
     <pekko.version>1.0.2</pekko.version>
-    <pekko-http.version>1.0.0</pekko-http.version>
+    <pekko-http.version>1.0.1</pekko-http.version>
     <pekko-connectors.version>1.0.2</pekko-connectors.version>
     <pekko-connectors-kafka.version>1.0.0</pekko-connectors-kafka.version>
     <pekko-grpc.version>1.0.2</pekko-grpc.version>
