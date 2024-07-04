@@ -7,7 +7,7 @@
   <name>pekko-libraries-bom</name>
   <description>Bill of Materials (BOM) for Apache Pekko libraries</description>
   <url>https://github.com/pjfanning/pekko-libraries-bom</url>
-  <version>2024.2.0</version>
+  <version>2024.6.0</version>
   <inceptionYear>2023</inceptionYear>
 
   <licenses>
@@ -32,7 +32,7 @@
 
   <properties>
     <group.version>1.0</group.version>
-    <pekko.version>1.0.2</pekko.version>
+    <pekko.version>1.0.3</pekko.version>
     <pekko-http.version>1.0.1</pekko-http.version>
     <pekko-connectors.version>1.0.2</pekko-connectors.version>
     <pekko-connectors-kafka.version>1.0.0</pekko-connectors-kafka.version>
