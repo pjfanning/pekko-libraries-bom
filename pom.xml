@@ -96,6 +96,20 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-management-bom_${scala.binary.version}</artifactId>
+        <version>${pekko-management.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-bom_${scala.binary.version}</artifactId>
+        <version>${pekko-connectors.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
       <dependency>
         <groupId>org.apache.pekko</groupId>
@@ -115,12 +129,6 @@
 
       <dependency>
         <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-connectors-bom_${scala.binary.version}</artifactId>
-        <version>${pekko-connectors.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-grpc-codegen_${scala.binary.version}</artifactId>
         <version>${pekko-grpc.version}</version>
       </dependency>
@@ -133,12 +141,6 @@
         <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-grpc-runtime_${scala.binary.version}</artifactId>
         <version>${pekko-grpc.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-management-bom_${scala.binary.version}</artifactId>
-        <version>${pekko-management.version}</version>
       </dependency>
 
       <dependency>
