@@ -110,6 +110,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-projection-bom_${scala.binary.version}</artifactId>
+        <version>${pekko-projection.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
       <dependency>
         <groupId>org.apache.pekko</groupId>
@@ -177,47 +184,6 @@
         <groupId>org.apache.pekko</groupId>
         <artifactId>pekko-projection-r2dbc_${scala.binary.version}</artifactId>
         <version>${pekko-persistence-r2dbc.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-cassandra_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-core_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-durable-state_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-eventsourced_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-jdbc_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-kafka_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-slick_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pekko</groupId>
-        <artifactId>pekko-projection-testkit_${scala.binary.version}</artifactId>
-        <version>${pekko-projection.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
