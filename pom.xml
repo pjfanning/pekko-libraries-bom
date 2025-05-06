@@ -7,7 +7,7 @@
   <name>pekko-libraries-bom</name>
   <description>Bill of Materials (BOM) for Apache Pekko libraries</description>
   <url>https://github.com/pjfanning/pekko-libraries-bom</url>
-  <version>2025.4.0</version>
+  <version>2025.5.0</version>
   <inceptionYear>2023</inceptionYear>
 
   <licenses>
@@ -37,7 +37,7 @@
     <pekko-connectors.version>1.1.0</pekko-connectors.version>
     <pekko-connectors-kafka.version>1.1.0</pekko-connectors-kafka.version>
     <pekko-grpc.version>1.1.1</pekko-grpc.version>
-    <pekko-management.version>1.1.0</pekko-management.version>
+    <pekko-management.version>1.1.1</pekko-management.version>
     <pekko-persistence-cassandra.version>1.1.0</pekko-persistence-cassandra.version>
     <pekko-persistence-dynamodb.version>1.1.0</pekko-persistence-dynamodb.version>
     <pekko-persistence-jdbc.version>1.1.0</pekko-persistence-jdbc.version>
