@@ -7,7 +7,7 @@
   <name>pekko-libraries-bom</name>
   <description>Bill of Materials (BOM) for Apache Pekko libraries</description>
   <url>https://github.com/pjfanning/pekko-libraries-bom</url>
-  <version>2025.5.0</version>
+  <version>2025.5.1</version>
   <inceptionYear>2023</inceptionYear>
 
   <licenses>
@@ -53,9 +53,18 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.7.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.7</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
@@ -68,17 +77,6 @@
       </plugin>
     </plugins>
   </build>
-
-  <distributionManagement>
-    <snapshotRepository>
-      <id>oss</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>oss</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-    </repository>
-  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
