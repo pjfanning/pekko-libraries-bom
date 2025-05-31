@@ -7,7 +7,7 @@
   <name>pekko-libraries-bom</name>
   <description>Bill of Materials (BOM) for Apache Pekko libraries</description>
   <url>https://github.com/pjfanning/pekko-libraries-bom</url>
-  <version>2025.5.1</version>
+  <version>2025.6.0-SNAPSHOT</version>
   <inceptionYear>2023</inceptionYear>
 
   <licenses>
@@ -59,6 +59,8 @@
         <extensions>true</extensions>
         <configuration>
           <publishingServerId>central</publishingServerId>
+          <autoPublish>true</autoPublish>
+          <waitUntil>published</waitUntil>
         </configuration>
       </plugin>
       <plugin>
