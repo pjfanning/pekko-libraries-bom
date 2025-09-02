@@ -2,6 +2,7 @@
 
 Bill of Materials (BOMs) for the Apache Pekko libraries.
 
+Example for Maven users:
 ```
 <dependencyManagement>
   <dependencies>
@@ -15,6 +16,8 @@ Bill of Materials (BOMs) for the Apache Pekko libraries.
   </dependencies>
 </dependencyManagement>
 ```
+
+Gradle uses [Platforms](https://docs.gradle.org/current/userguide/platforms.html#sec:bom-import) to import BOMs.
 
 `pekko1.1-libraries-bom_2.12` and `pekko1.1-libraries-bom_3` are also supported. The suffix is the Scala Binary version.
 
