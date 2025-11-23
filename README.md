@@ -19,7 +19,7 @@ Example for Maven users:
 
 Gradle uses [Platforms](https://docs.gradle.org/current/userguide/platforms.html#sec:bom-import) to import BOMs.
 
-`pekko1.1-libraries-bom_2.12` and `pekko1.1-libraries-bom_3` are also supported. The suffix is the Scala Binary version.
+`pekko1.2-libraries-bom_2.12` and `pekko1.2-libraries-bom_3` are also supported. The suffix is the Scala Binary version.
 
 The `1.2` part of the name reflects that the Pekko 1.2 core libs are out.
 The `2025.9.0` versioning is based on the year and the month while the `patch part` of the version will increment if we need patch changes.
